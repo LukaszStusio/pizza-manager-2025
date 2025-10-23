@@ -26,6 +26,8 @@ public class PizzeriaApplication {
         Order order1 = new Order(01);
 //        order1.addProducts(new Product[] { margarita, soczek});
         order1.addProducts(List.of(margarita, soczek));
+        order1.addProducts(List.of(tomato));
+
 
         System.out.println(order1);
 	}

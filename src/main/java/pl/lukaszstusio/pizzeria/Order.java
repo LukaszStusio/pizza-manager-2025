@@ -32,7 +32,7 @@ public class Order {
     }
 
     public void addProducts(List<Product> products) {
-        this.products = products;
+        this.products.addAll(products);
     }
 }
 
