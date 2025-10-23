@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+/src/main/resources/static/GitHubToken.txt
+/src/main/resources/static/BitbucketToken.txt
