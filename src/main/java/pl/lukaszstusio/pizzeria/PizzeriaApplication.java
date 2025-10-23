@@ -3,6 +3,9 @@ package pl.lukaszstusio.pizzeria;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @SpringBootApplication
 public class PizzeriaApplication {
 
@@ -16,9 +19,16 @@ public class PizzeriaApplication {
 		Ingredient tomato = new Ingredient("Tomato", 2, true, 1, false);
 		System.out.println(tomato);
 
-        Product soczek = new Beverage("Kubuś", 5, true);
+        Beverage soczek = new Beverage("Kubuś", 5, true);
 //        System.out.println(soczek.toString());
         System.out.println(soczek);
+
+        Order order1 = new Order(01);
+//        order1.addProducts(new Product[] { margarita, soczek});
+        order1.addProducts(List.of(margarita, soczek));
+
+        System.out.println(order1);
 	}
 
 }
+
