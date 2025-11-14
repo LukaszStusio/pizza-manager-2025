@@ -1,0 +1,4 @@
+13/11/2025
+walidacja na pole
+    name not empty
+    price not nie-ujemny

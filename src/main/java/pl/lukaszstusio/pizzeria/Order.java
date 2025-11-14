@@ -1,6 +1,7 @@
 package pl.lukaszstusio.pizzeria;
 
 import lombok.Getter;
+import pl.lukaszstusio.pizzeria.product.Product;
 
 import java.util.ArrayList;
 import java.util.List;

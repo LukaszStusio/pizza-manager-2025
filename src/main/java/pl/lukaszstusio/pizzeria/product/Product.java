@@ -1,4 +1,4 @@
-package pl.lukaszstusio.pizzeria;
+package pl.lukaszstusio.pizzeria.product;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,6 +11,14 @@ public abstract class Product {
     protected boolean vegan;
 
     public Product(String name, int price, boolean vegan) {
+
+        if (name.isBlank()) {
+            throw new NoNameProductException("Every product must have a name");
+        }
+
+        if (price < 0) {
+            throw new NegativePriceProductException("Price cannot be less than 0");
+        }
         this.name = name;
         this.price = price;
         this.vegan = vegan;

@@ -2,6 +2,7 @@ package pl.lukaszstusio.pizzeria;
 
 import lombok.Getter;
 import lombok.Setter;
+import pl.lukaszstusio.pizzeria.product.Product;
 
 @Getter
 @Setter
