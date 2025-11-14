@@ -15,7 +15,7 @@ public class PizzeriaApplication {
         Ingredient tomato = new Ingredient("Tomato", 2, true, 1, false);
         System.out.println(tomato);
 
-        Pizza margarita = new Pizza("Margarita", -12, false, null);
+        Pizza margarita = new Pizza("Margarita", 12, false, List.of(tomato));
         String nameofpizza = margarita.getName();
         System.out.println(margarita);
 
